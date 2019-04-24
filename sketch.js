@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-  if (points > 100000 || points < -100000) {
+  if (points > 100000) {
     foo();
 
     createCanvas(windowWidth, windowHeight, WEBGL);
@@ -121,7 +121,7 @@ function noop() {}
 
 function foo() {
   foo = noop; // swap the functions
-  mySound.setVolume(0.1);
+  mySound.setVolume(0.3);
   mySound.play();
   // do your thing
 }
